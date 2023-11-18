@@ -13,8 +13,8 @@
 <body>
 
   <div class="main-container">
-    <header>
-      <h1>Desafio</h1>
+    <header class="top-menu">
+      <h1>Desafio<span class="dot">.</span></h1>
 
       <nav class="nav-top">
         <ul class="contact-list">
@@ -26,12 +26,12 @@
 
     <section class="challenges-container">
       <article class="challenge">
-        <div class="challenge-description-container">
+        <div class="challenge-description-container chall-content">
           <h2>Descrição do desafio:</h2>
           <p>Implemente uma função que receba um número inteiro positivo e retorne o somatório de todos os valores inteiros divisíveis por 3 ou 5 que sejam inferiores ao número passado.</p>
         </div>
 
-        <div class="challenge-examples-container">
+        <div class="challenge-examples-container chall-content">
           <h2>Exemplos:</h2>
           <ul>
             <li>Caso sua função receba o inteiro 10, ela deve retornar 23, resultante do somatório dos números 3, 5, 6 e 9 que são menores que 10.</li>
@@ -39,11 +39,10 @@
           </ul>
         </div>
 
-        <div class="challenge-resolution-container">
+        <div class="challenge-resolution-container chall-content">
           <h2>Resolução:</h2>
           <div class="challenge-resolution">
-            <label for="integerNumber">Insira um número inteiro:</label>
-            <input type="number" name="integerNumber" id="integerNumber">
+            <button id="challengeStart" type="button" aria-label="Abrir janela para o desafio">INICIAR DESAFIO</button>
           </div>
         </div>
       </article>
