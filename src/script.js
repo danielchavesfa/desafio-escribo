@@ -1,9 +1,4 @@
-const btnChallengeStart = document.querySelector('[data-challenge="button"]');
+import NewPage from './modules/newPage.js';
 
-btnChallengeStart.addEventListener('click', () => {
-  const { innerHeight, innerWidth } = window;
-  const { popupWidth, popupHeight } = { popupWidth: 1000, popupHeight: 700 };
-  const { x, y } = { x: (innerWidth - popupWidth) / 2, y: (innerHeight - popupHeight) / 2 }
-  const popupOptions = `width=${popupWidth},height=${popupHeight},toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,popup=true,top=${y},left=${x}`;
-  const popupChallenge = window.open('desafio.html', '_blank', popupOptions);
-});
+const newPage = new NewPage('[data-challenge="button"]', { width: 1000, height: 700 });
+newPage.init();
