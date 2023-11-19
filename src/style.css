@@ -253,7 +253,12 @@ a {
   font-weight: 700;
 }
 
-.result-content p {
+.result-count .box-num.divided {
+  background-color: red;
+  color: #fff;
+}
+
+.result-container p {
   font-size: 1rem;
   font-family: var(--secon-font);
   text-align: center;
